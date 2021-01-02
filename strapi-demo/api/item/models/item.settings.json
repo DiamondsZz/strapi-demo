@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "items",
   "info": {
-    "name": "post",
-    "description": ""
+    "name": "item"
   },
   "options": {
     "increments": true,
@@ -11,20 +10,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
-    },
-    "description": {
-      "type": "richtext"
     },
     "updateTime": {
       "type": "datetime"
     },
-    "content": {
-      "type": "richtext"
-    },
-    "createTime": {
-      "type": "datetime"
+    "description": {
+      "type": "text"
     }
   }
 }
